@@ -12,6 +12,8 @@ environment:
     PYPI_PASSWORD:
       secure: KOr+oEHZJmo1el3bT+ivmQ==
     ENABLE_LOGBOOK_NTEVENTLOG_TESTS: "TRUE"
+    COVERALLS_REPO_TOKEN:
+      secure: RpEinDJpceUTvdD+B62X3vO2xeNQHX76c+7e3zUBOJLTPeEfcF7HeHOeW1ley50I
 
   matrix:
     - PYTHON: "C:\\Python26"
