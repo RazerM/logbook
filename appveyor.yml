@@ -68,9 +68,10 @@ install:
 build: off
 
 test_script:
-  - py.test -r s tests
+  - py.test --cov=logbook -r s tests
 
 after_test:
+  - coveralls
   - ".appveyor\\after_test.bat"
 
 artifacts:

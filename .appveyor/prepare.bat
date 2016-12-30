@@ -1,4 +1,4 @@
-pip install -U wheel setuptools || goto :error
+pip install -U wheel setuptools coveralls || goto :error
 nuget install redis-64 -excludeversion || goto :error
 redis-64\tools\redis-server.exe --service-install || goto :error
 redis-64\tools\redis-server.exe --service-start || goto :error
