@@ -15,10 +15,7 @@ import sys
 import stat
 import errno
 import socket
-try:
-    from hashlib import sha1
-except ImportError:
-    from sha import new as sha1
+from hashlib import sha1
 import traceback
 import collections
 from datetime import datetime, timedelta
